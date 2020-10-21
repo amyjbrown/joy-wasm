@@ -1502,7 +1502,7 @@ function createExportWrapper(name, fixedasm) {
 }
 
 
-var wasmBinaryFile = 'joy.wasm';
+var wasmBinaryFile = 'index.wasm';
 if (!isDataURI(wasmBinaryFile)) {
   wasmBinaryFile = locateFile(wasmBinaryFile);
 }
@@ -2082,11 +2082,7 @@ var ASM_CONSTS = {
               } else {
                 result = null;
               }
-            } 
-            
-            
-            else
-            // HERE IS WHAT NEEDS TO BE CHANGED !!!!
+            } else
             if (typeof window != 'undefined' &&
               typeof window.prompt == 'function') {
               // Browser.
